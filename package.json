@@ -5,8 +5,8 @@
   "main": "index.md",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "JEKYLL_ENV=production jekyll build",
-    "run": "jekyll serve"
+    "build": "jekyll build && netlify deploy",
+    "run": "JEKYLL_ENV=dev jekyll serve"
   },
   "repository": {
     "type": "git",

@@ -7,7 +7,7 @@ Jekyll only: `jekyll serve`
 With Netlify: `netlify dev`
 
 ## Local Deployment test
-Jekyll only (update _site): `JEKYLL_ENV=production jekyll build`
+Jekyll only (update _site): `jekyll build`
 Netlify: `netlify deploy`
 
 ## Production Deployment
