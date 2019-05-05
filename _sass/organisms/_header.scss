@@ -1,0 +1,25 @@
+.o-header {
+
+  > div {
+    position: relative;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+}
+
+.o-header__title-wrapper {
+
+  img {
+    height: 50px;
+    width: 50px;
+  }
+}
+
+.o-header__title {
+  line-height: 50px;
+  vertical-align: top;
+  margin-left: .25em;
+}

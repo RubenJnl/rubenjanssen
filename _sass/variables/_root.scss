@@ -1,0 +1,11 @@
+:root {
+  --default-background: rgb(235, 235, 235);
+  --default-text: rgb(36, 36, 36);
+  --default-link: rgb(170, 0, 50);
+  --default-link-hover: rgb(85, 0, 25);
+
+  --dark-background: var(--default-text);
+  --dark-text: var(--default-background);
+  --dark-link: rgb(195, 25, 60);
+  --dark-link-hover: rgb(225, 25, 25);
+}

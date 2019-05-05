@@ -1,0 +1,21 @@
+{
+  "name": "rubenjanssen",
+  "version": "1.0.0",
+  "description": "Portfolio Ruben Janssen",
+  "main": "index.md",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build" : "JEKYLL_ENV=production jekyll build",
+    "run" : "jekyll serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RubenJnl/rubenjanssen.git"
+  },
+  "author": "Ruben Janssen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RubenJnl/rubenjanssen/issues"
+  },
+  "homepage": "https://github.com/RubenJnl/rubenjanssen#readme"
+}

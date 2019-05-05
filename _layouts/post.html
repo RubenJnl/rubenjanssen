@@ -1,0 +1,36 @@
+---
+layout: default
+---
+<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">{{ page.title | escape }}</h1>
+    <p class="post-meta">
+      <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+        {%- assign date_format = site.minima.date_format | default: "%-d %B %Y" -%}
+        {{ page.date | date: date_format }}
+      </time>
+      {%- if page.author -%}
+        • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">{{ page.author | escape }}</span></span>
+      {%- endif -%}</p>
+  </header>
+
+  <div class="post-content o-content" itemprop="articleBody">
+    {{ content }}
+  </div>
+
+  {% for img in page.images %}
+  <figure class="a-image">
+      {%- assign date_year = "%Y" -%}
+      {% assign year = page.date | date: date_year %}
+      {% if img.url %}
+      <img src="/content/{{ year }}/{{ img.url }}{{ img.ext }}" class="" alt="{{ img.alt }}" />
+      {% endif %}
+  </figure>
+  {% endfor %}
+
+  {%- if site.disqus.shortname -%}
+    {%- include disqus_comments.html -%}
+  {%- endif -%}
+
+</article>

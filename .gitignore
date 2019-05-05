@@ -1,0 +1,6 @@
+.git
+DS_STORE
+.netlify/
+.sass-cache
+_site
+package-lock.json

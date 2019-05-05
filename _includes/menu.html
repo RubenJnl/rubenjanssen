@@ -1,0 +1,36 @@
+<nav id="site-nav" class="o-container u-screenreader">
+
+    <h2 class="u-screenreader">Menu </h2>
+
+    <div class="c-menu__items">
+        <ul class="a-list-reset">
+
+            {% assign pages = site.pages | sort: 'pId' %}
+            {% for my_page in pages %}
+            {% if my_page.title %}
+
+                {% if page.url == my_page.url %}
+                    <li class="u-active">
+                        {% if my_page.menu %}
+                          <span class="c-menu__item">{{ my_page.menu }}</span>
+                        {% else %}
+                          <span class="c-menu__item">{{ my_page.title }}</span>
+                        {% endif %}
+                    </li>
+                {% else %}
+                    <li>
+                        {% if my_page.menu %}
+                         <a href="{{ my_page.url | prepend: site.baseurl }}" class="c-menu__item">{{ my_page.menu }}</a>
+                        {% else %}
+                         <a href="{{ my_page.url | prepend: site.baseurl }}" class="c-menu__item">{{ my_page.title }}</a>
+                        {% endif %}
+                    </li>
+                {% endif %}
+
+            {% endif %}
+            {% endfor %}
+
+
+        </ul>
+    </div>
+</nav>

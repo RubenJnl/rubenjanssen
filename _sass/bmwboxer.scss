@@ -1,0 +1,33 @@
+@import 'variables/normalize';
+@import 'variables/root';
+
+//// ATOMS
+@import 'atoms/links';
+@import 'atoms/lists';
+@import 'atoms/image';
+@import 'atoms/article';
+
+//// MOLECULES
+@import 'molecules/stacks';
+@import 'molecules/toggle';
+
+
+//// ORGANISMS
+@import 'organisms/content';
+@import 'organisms/header';
+
+//// UTILITIES
+@import 'utilities';
+
+html {
+    background-color: var(--default-background);
+    color: var(--default-text);
+    font-family: Helvetica, sans-serif;
+    transition: background-color .5s ease;
+
+  &.dark {
+    background-color: var(--dark-background);
+    color: var(--dark-text);
+    transition: background-color .5s ease;
+  }
+}

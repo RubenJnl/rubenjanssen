@@ -1,0 +1,20 @@
+a {
+  color: var(--default-link);
+  transition: all .3s ease;
+
+  .dark & {
+    color: var(--dark-link);
+  }
+  
+  &:hover,
+  &:focus,
+  &:active {
+    color: var(--default-link-hover);
+    transition: all .3s ease;
+
+    .dark & {
+      color: var(--dark-link-hover);
+      transition: all .3s ease;
+    }
+  }
+}

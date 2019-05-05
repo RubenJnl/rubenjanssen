@@ -1,0 +1,54 @@
+.m-toggle {
+  position: absolute;
+  top: 1em;
+  right: 1em;
+  height: 40px;
+  margin: auto;
+  text-align: center;
+
+  input {
+   position: absolute;
+   opacity: 0;
+  }
+
+  > label {
+    line-height: 20px;
+    vertical-align: bottom;
+    margin-right: .5em;
+  }
+}
+
+.m-toggle__wrapper {
+  display: inline-block;
+  font-size: 20px;
+  height: 1em;
+  width: 2em;
+  background: var(--dark-background);
+  border-radius: 1em;
+  transition: all .5s ease;
+}
+
+.m-toggle__view {
+  height: 1em;
+  width: 1em;
+  border-radius: 1em;
+  background: #FFF;
+  box-shadow: 0 0 1px 1px var(--dark-background);
+  transition: all .5s ease;
+}
+
+.m-toggle input:checked {
+
+  + .m-toggle__wrapper {
+    background: var(--default-background);
+    transition: all .5s ease;
+
+    > .m-toggle__view {
+      transform: translate3d(100%, 0, 0);
+      background: var(--dark-background);
+      box-shadow: 0 0 1px 1px var(--default-link);
+      transition: all .5s ease;
+    }
+  }
+
+}
