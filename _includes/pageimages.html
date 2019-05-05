@@ -1,0 +1,9 @@
+{% if page.title == 'Home' %}
+  {% for img in page.images %}
+  <figure class="a-image">
+      {% if img.url %}
+      <img src="/content{{ year }}/{{ img.url }}{{ img.ext }}" class="" alt="{{ img.alt }}" />
+      {% endif %}
+  </figure>
+  {% endfor %}
+{% endif %}

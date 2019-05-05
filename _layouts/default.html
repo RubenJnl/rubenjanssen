@@ -11,13 +11,17 @@ layout: compress
 
   <div id="skip-links" class="u-screenreader">
     <ul>
-      <li><a href="#main-content">Spring naar inhoud</a></li>
-      <li><a href="#site-nav">Spring naar navigatie</a></li>
-      <li><a href="#footer">Spring naar contactgegevens</a></li>
+      <li><a href="#main-content">Jump to content</a></li>
+      <!-- <li><a href="#site-nav">Jump to navigation</a></li> -->
+      {% if page.layout != 'post' %}
+      <li><a href="#posts">Jump to posts list</li>
+      {% endif %}
+      <li><a href="#footer">Jump to contact</a></li>
     </ul>
   </div>
 
     {% include header.html %}
+
 
     <div id="main-content" class="o-container">
       <div class="o-content">
@@ -25,8 +29,14 @@ layout: compress
       </div>
     </div>
 
+    {% if page.layout != 'post' %}
+      <div class="o-container">
+        <div class="o-content">
+          {% include postlist.html %}
 
-
+        </div>
+      </div>
+    {% endif %}
 
 
     {% include footer.html %}

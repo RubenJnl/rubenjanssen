@@ -23,7 +23,7 @@
   font-size: 20px;
   height: 1em;
   width: 2em;
-  background: var(--dark-background);
+  background: var(--light-background);
   border-radius: 1em;
   transition: all .5s ease;
 }
@@ -32,9 +32,21 @@
   height: 1em;
   width: 1em;
   border-radius: 1em;
-  background: #FFF;
-  box-shadow: 0 0 1px 1px var(--dark-background);
+  background: var(--default-secondary);
+  box-shadow: 0 0 1px 1px var(--light-background);
   transition: all .5s ease;
+}
+
+.m-toggle input:focus {
+
+  + .m-toggle__wrapper {
+
+
+    > .m-toggle__view {
+      background: var(--default-link);
+      box-shadow: 0 0 2px 1px var(--light-background);
+    }
+  }
 }
 
 .m-toggle input:checked {
@@ -45,9 +57,19 @@
 
     > .m-toggle__view {
       transform: translate3d(100%, 0, 0);
-      background: var(--dark-background);
+      background: var(--light-background);
       box-shadow: 0 0 1px 1px var(--default-link);
       transition: all .5s ease;
+    }
+  }
+
+  &:focus {
+
+    + .m-toggle__wrapper {
+
+      > .m-toggle__view {
+        background: var(--default-link-hover);
+      }
     }
   }
 

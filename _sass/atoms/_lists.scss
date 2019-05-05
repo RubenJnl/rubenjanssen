@@ -1,4 +1,4 @@
-.a-list-reset {
+.a-list--reset {
   margin: 0;
   padding: 0;
 
@@ -6,5 +6,27 @@
     // margin: 0;
     list-style: none;
 
+  }
+}
+
+
+.a-list--inline li {
+  display: inline-block;
+}
+
+.a-list--separator {
+
+  li {
+    position: relative;
+  }
+
+  li:not(:last-child)::before {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: .5em;
+    bottom: .5em;
+    width: 1px;
+    background: var(--light-meta);
   }
 }

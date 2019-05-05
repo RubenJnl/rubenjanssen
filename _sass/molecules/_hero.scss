@@ -1,0 +1,20 @@
+.m-hero {
+  background-color: var(--light-background);
+
+  .o-container {
+    padding: 0;
+  }
+}
+
+.m-hero__image {
+  margin: 0;
+
+  overflow: hidden;
+
+  img {
+    min-height: 150px;
+    max-height: 25vw;
+    display: block;
+    margin: 0 auto;
+  }
+}
