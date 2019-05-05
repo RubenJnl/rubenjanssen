@@ -5,8 +5,8 @@
   "main": "index.md",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build" : "JEKYLL_ENV=production jekyll build",
-    "run" : "jekyll serve"
+    "build": "JEKYLL_ENV=production jekyll build",
+    "run": "jekyll serve"
   },
   "repository": {
     "type": "git",
@@ -17,5 +17,6 @@
   "bugs": {
     "url": "https://github.com/RubenJnl/rubenjanssen/issues"
   },
-  "homepage": "https://github.com/RubenJnl/rubenjanssen#readme"
+  "homepage": "https://github.com/RubenJnl/rubenjanssen#readme",
+  "dependencies": {}
 }
