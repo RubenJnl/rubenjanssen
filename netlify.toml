@@ -10,7 +10,7 @@
   publish = "_site"
 
 [dev]
-  command = "npm run build"
+  command = "npm run"
   functions = "./"
 
 
