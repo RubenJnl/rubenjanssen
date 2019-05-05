@@ -1,19 +1,19 @@
 {
-    "name": "BMW Boxer",
-    "short_name": "BMW Boxer",
+    "name": "Ruben",
+    "short_name": "Ruben",
     "icons": [
         {
-            "src": "/android-chrome-192x192.png",
+            "src": "/static/icons/android-chrome-192x192.png",
             "sizes": "192x192",
             "type": "image/png"
         },
         {
-            "src": "/android-chrome-512x512.png",
+            "src": "/static/icons/android-chrome-512x512.png",
             "sizes": "512x512",
             "type": "image/png"
         }
     ],
-    "theme_color": "#ebebeb",
-    "background_color": "#ebebeb",
+    "theme_color": "#430071",
+    "background_color": "#430071",
     "display": "standalone"
 }

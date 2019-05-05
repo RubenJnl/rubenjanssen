@@ -1,3 +1,15 @@
-<!-- Global site tag (gtag.js) - Google Analytics -->
+{% if jekyll.environment == "production" %}
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-1516236-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
 
-<!-- Sentry JS logging -->
+    gtag('config', 'UA-1516236-1');
+  </script>
+
+  <!-- Sentry JS logging -->
+  <script src="https://browser.sentry-cdn.com/5.1.1/bundle.min.js" crossorigin="anonymous"></script>
+  <script>Sentry.init({ dsn: 'https://10988e5ad4184c13949f9495c3aa882a@sentry.io/1448129' });</script>
+{% endif %}
