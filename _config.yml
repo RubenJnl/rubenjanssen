@@ -23,6 +23,17 @@ siteUrl: https://rubenjanssen.me
 url: "https://rubenjanssen.me" # the base hostname & protocol for your site, e.g. http://example.com
 exclude: ["*.xml","*.log","Gemfile", "*.json", "images", "deploy" ,"node_modules", "README.md"]
 
+social:
+  - name: Twitter
+    url: https://twitter.com/RubenJ
+  - name: Facebook
+    url: https://www.facebook.com/RubenJanssen.nl
+  - name: Last.fm
+    url: https://www.last.fm/user/RubenJ_nl
+  - name: 500px
+    url: https://500px.com/RubenJanssen
+
+
 # Build settings
 markdown: kramdown
 theme: minima

@@ -1,0 +1,41 @@
+.m-post {
+  margin-bottom: 2em;
+}
+
+.m-post-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.m-post-list {
+  max-width: 50em;
+  padding-left: 0;
+  margin-bottom: 2em;
+
+  li {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+
+  .m-post-meta {
+    align-self: flex-start;
+  }
+
+  h3 {
+    margin: 0 1em 0 0;
+  }
+}
+
+.m-post-meta {
+  color: var(--default-meta);
+
+  &.m-post-meta--small {
+    font-size: .85em;
+  }
+
+  .light & {
+    color: var(--light-meta);
+  }
+}

@@ -8,12 +8,16 @@
 @import 'atoms/article';
 
 //// MOLECULES
+@import 'molecules/hero';
+@import 'molecules/post';
 @import 'molecules/stacks';
 @import 'molecules/toggle';
+@import 'molecules/footer';
 
 
 //// ORGANISMS
 @import 'organisms/content';
+@import 'organisms/flex';
 @import 'organisms/header';
 
 //// UTILITIES
@@ -25,9 +29,9 @@ html {
     font-family: Helvetica, sans-serif;
     transition: background-color .5s ease;
 
-  &.dark {
-    background-color: var(--dark-background);
-    color: var(--dark-text);
+  &.light {
+    background-color: var(--light-background);
+    color: var(--light-text);
     transition: background-color .5s ease;
   }
 }

@@ -1,0 +1,10 @@
+<div class="m-hero">
+  <div class="o-container">
+    {{page.hero}}
+    {% for img in page.heroImg %}
+    <figure class="m-hero__image">
+      <img src="/content/{{ img.url }}" class="" alt="{{ img.alt }}" />
+    </figure>
+    {% endfor %}
+  </div>
+</div>

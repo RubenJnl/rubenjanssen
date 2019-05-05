@@ -1,14 +1,18 @@
-<footer id="footer" class="c-footer o-stack o-stack--before o-stack--primary">
+<footer id="footer" class="m-footer o-stack o-stack--before o-stack--primary">
 
   <div class="o-container">
 
-    <div class="o-grid o-grid--between">
+    <div class="o-flex o-flex--between">
 
-      <div class="o-grid__item">
-        <ul class="a-list-reset">
-          <li>
-            <span> made with ♡ by </span><a href="https://rubenjanssen.me/" target="_blank">Ruben</a>
-          </li>
+      <div class="o-flex">
+        <p> made with ♡ </p>
+      </div>
+
+      <div class="o-flex__item">
+        <ul class="a-list--reset a-list--inline a-list--separator">
+          {% for s in site.social %}
+            <li><a href="{{s.url}}" target="_blank">{{s.name}}</a></li>
+          {% endfor %}
         </ul>
       </div>
 
