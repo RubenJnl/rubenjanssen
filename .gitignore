@@ -5,3 +5,4 @@ DS_STORE
 _site
 package-lock.json
 SourceFiles
+Gemfile.lock
