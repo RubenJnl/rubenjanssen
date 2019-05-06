@@ -1,6 +1,6 @@
 # example netlify.toml
 [build]
-  command = "jekyll build"
+  command = "npm run build"
   functions = "./"
   publish = "_site"
 
