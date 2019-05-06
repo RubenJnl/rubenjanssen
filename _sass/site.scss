@@ -1,6 +1,9 @@
 @import 'variables/normalize';
 @import 'variables/root';
 
+// MIXINS
+@import 'mixins/all';
+
 //// ATOMS
 @import 'atoms/links';
 @import 'atoms/lists';
@@ -24,14 +27,40 @@
 @import 'utilities';
 
 html {
-    background-color: var(--default-background);
-    color: var(--default-text);
+    background-color: var(--swap-background);
+    color: var(--swap-text);
     font-family: Helvetica, sans-serif;
     transition: background-color .5s ease;
 
-  &.light {
-    background-color: var(--light-background);
-    color: var(--light-text);
+  @include get-mode('dark') {
+    background-color: var(--default-background);
+    color: var(--default-text);
     transition: background-color .5s ease;
   }
+
+  &.swap {
+    background-color: var(--swap-background);
+    color: var(--swap-text);
+
+    @include get-mode('dark') {
+      background-color: var(--swap-background);
+      color: var(--swap-text);
+      transition: background-color .5s ease;
+    }
+  }
+
+  @include get-mode('light'){
+    background-color: var(--swap-background);
+    color: var(--swap-text);
+    transition: background-color .5s ease;
+
+    &.swap {
+      background-color: var(--default-background);
+      color: var(--default-text);
+    }
+  }
+
+
+
+
 }

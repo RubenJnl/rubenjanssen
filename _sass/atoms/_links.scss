@@ -2,8 +2,8 @@ a {
   color: var(--default-link);
   transition: all .3s ease;
 
-  .light & {
-    color: var(--light-link);
+  .swap & {
+    color: var(--swap-link);
   }
   
   &:hover,
@@ -12,8 +12,8 @@ a {
     color: var(--default-link-hover);
     transition: all .3s ease;
 
-    .light & {
-      color: var(--light-link-hover);
+    .swap & {
+      color: var(--swap-link-hover);
       transition: all .3s ease;
     }
   }
