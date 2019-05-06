@@ -5,7 +5,11 @@
   "main": "index.md",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+<<<<<<< HEAD
     "build": "jekyll build && netlify deploy",
+=======
+    "build": "jekyll build",
+>>>>>>> master
     "run": "JEKYLL_ENV=dev jekyll serve"
   },
   "repository": {
@@ -17,6 +21,5 @@
   "bugs": {
     "url": "https://github.com/RubenJnl/rubenjanssen/issues"
   },
-  "homepage": "https://github.com/RubenJnl/rubenjanssen#readme",
-  "dependencies": {}
+  "homepage": "https://github.com/RubenJnl/rubenjanssen#readme"
 }
