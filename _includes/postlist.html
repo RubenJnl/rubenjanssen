@@ -5,7 +5,7 @@
       {%- for post in site.posts -%}
       <li>
         <h3>
-          <a class="post-link" href="{{ post.url | relative_url }}">
+          <a class="post-link" href="{{ post.url | relative_url }}" data-title="{{ post.title | escape }}">
             {{ post.title | escape }}
           </a>
         </h3>
