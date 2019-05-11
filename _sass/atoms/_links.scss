@@ -1,17 +1,18 @@
 a {
-  color: var(--default-link);
+  color: var(--link);
   transition: all .3s ease;
   position: relative;
   display: inline-block;
 
   .swap & {
     color: var(--swap-link);
+    transition: all .3s ease;
   }
 
   &:hover,
   &:focus,
   &:active {
-    color: var(--default-link-hover);
+    color: var(--link-hover);
     transition: all .3s ease;
 
     .swap & {
@@ -34,7 +35,11 @@ a {
   }
 
   &::before {
-    color: yellow;
+    color: green;
+
+    @include get-mode('dark') {
+      color: yellow;
+    }
   }
 
   &::after {
@@ -50,11 +55,11 @@ a {
     }
 
     &::before {
-      transform: rotate(3deg) translateX(.25em) skewX(-5deg);
+      transform: rotate(1deg) translateX(.1em) skewX(-1deg);
     }
 
     &::after {
-      transform: rotate(-2deg) translateX(-.2em) skewX(-5deg);
+      transform: rotate(-1deg) translateX(-.1em) skewX(-1deg);
     }
 
   }

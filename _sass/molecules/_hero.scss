@@ -1,5 +1,9 @@
 .m-hero {
-  background-color: var(--swap-background);
+  background-color: var(--invert-background);
+
+  .swap & {
+    background-color: var(--background);
+  }
 
   .o-container {
     padding: 0;
