@@ -29,13 +29,9 @@
 }
 
 .m-post-meta {
-  color: var(--default-meta);
+  color: var(--meta);
 
   &.m-post-meta--small {
     font-size: .85em;
-  }
-
-  .light & {
-    color: var(--light-meta);
   }
 }

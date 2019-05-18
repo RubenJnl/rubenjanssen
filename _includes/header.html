@@ -2,17 +2,32 @@
 
   <div class="o-container">
     <h2>
-      <a href="{{ site.baseurl }}/">
+      <a href="{{ site.baseurl }}/" class="a-multi">
         {{ site.title }}
+        <span aria-hidden="true">{{ site.title }}</span>
+        <span aria-hidden="true">{{ site.title }}</span>
+        <span aria-hidden="true">{{ site.title }}</span>
       </a>
     </h2>
     <div class="m-toggle">
-      <label for="theme">Thema</label>
+      <label for="theme">Swap theme</label>
       <input id="theme" type="checkbox">
       <label for="theme" class="m-toggle__wrapper">
         <div class="m-toggle__view"></div>
+      </label>
+      <div class="m-toggle__info">
+        <details>
+          <summary>How?</summary>
+          <p>
+            In browsers like <a href="https://www.mozilla.org/en-US/firefox/new/" target="_blank" data-title="Firefox">Firefox</a> &amp;
+            <a href="https://www.apple.com/safari/" target="_blank" data-title="Safari">Safari</a> this site uses the appearance settings for dark or light mode.
+            The toggle can be used to swap from light to dark or the other way around.
+            You can check my <a href="https://github.com/RubenJnl/rubenjanssen" data-title="Github project" target="_blank">Github project</a> on how I've configured this.
+          </p>
+        </details>
       </div>
     </div>
+  </div>
 
 </header>
 {% include hero.html %}

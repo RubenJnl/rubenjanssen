@@ -5,11 +5,7 @@
   "main": "index.md",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-<<<<<<< HEAD
-    "build": "jekyll build && netlify deploy",
-=======
     "build": "jekyll build",
->>>>>>> master
     "run": "JEKYLL_ENV=dev jekyll serve"
   },
   "repository": {

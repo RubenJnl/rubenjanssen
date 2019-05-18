@@ -3,7 +3,6 @@
   padding: 0;
 
   li {
-    // margin: 0;
     list-style: none;
 
   }
@@ -27,6 +26,6 @@
     top: .5em;
     bottom: .5em;
     width: 1px;
-    background: var(--light-meta);
+    background: var(--meta);
   }
 }
