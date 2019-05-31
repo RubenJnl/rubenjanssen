@@ -5,8 +5,7 @@ a {
   display: inline-block;
 
   .swap & {
-    color: var(--swap-link);
-    transition: all .3s ease;
+
   }
 
   &:hover,
@@ -16,8 +15,7 @@ a {
     transition: all .3s ease;
 
     .swap & {
-      color: var(--swap-link-hover);
-      transition: all .3s ease;
+
     }
   }
 
@@ -36,6 +34,7 @@ a {
 
   &::before {
     color: green;
+    // mix-blend-mode: darken;
 
     @include get-mode('dark') {
       color: yellow;
@@ -44,6 +43,7 @@ a {
 
   &::after {
     color: red;
+    // mix-blend-mode: color-burn;
   }
 
   &:hover {

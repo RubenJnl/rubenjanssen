@@ -34,15 +34,7 @@
   transition: all .5s ease;
 
   .swap & {
-    background-color: var(--invert-background);
-
-    @include get-mode('light'){
-      background-color: var(--background);
-    }
-
-    @include get-mode('dark'){
-      background-color: var(--invert-background);
-    }
+    
   }
 }
 
@@ -53,18 +45,18 @@
   background: var(--secondary);
   box-shadow: 0 0 1px 1px var(--background);
   transition: all .5s ease;
-
-  .swap & {
-    background-color: var(--invert-background);
-
-    @include get-mode('light'){
-      background-color: var(--background);
-    }
-
-    // @include get-mode('dark'){
-    //   background-color: var(--invert-background);
-    // }
-  }
+  //
+  // .swap & {
+  //   background-color: var(--invert-background);
+  //
+  //   @include get-mode('light'){
+  //     background-color: var(--background);
+  //   }
+  //
+  //   // @include get-mode('dark'){
+  //   //   background-color: var(--invert-background);
+  //   // }
+  // }
 }
 
 .m-toggle input:focus {
@@ -85,9 +77,9 @@
     background: var(--invert-background);
     transition: all .5s ease;
 
-    .swap & {
-        background-color: var(--background);
-    }
+    // .swap & {
+    //     background-color: var(--background);
+    // }
 
     > .m-toggle__view {
       transform: translate3d(100%, 0, 0);
@@ -132,10 +124,10 @@
       background: var(--invert-background);
       padding: 1em;
 
-      .swap & {
-        color: var(--swap-invert-text);
-        background: var(--swap-invert-background);
-      }
+      // .swap & {
+      //   color: var(--swap-invert-text);
+      //   background: var(--swap-invert-background);
+      // }
     }
   }
 }

@@ -32,10 +32,8 @@ html {
   color: var(--text);
   font-family: Helvetica, sans-serif;
   transition: background-color .5s ease;
-
+  
   &.swap {
-    background-color: var(--swap-background);
-    color: var(--swap-text);
-    transition: background-color .5s ease;
+
   }
 }
