@@ -4,9 +4,9 @@
   "description": "Portfolio Ruben Janssen",
   "main": "index.md",
   "scripts": {
+    "start" : "netlify dev",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "jekyll build",
-    "run": "JEKYLL_ENV=dev jekyll serve"
+    "build": "jekyll build"
   },
   "repository": {
     "type": "git",

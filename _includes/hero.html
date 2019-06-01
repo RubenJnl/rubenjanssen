@@ -6,5 +6,10 @@
       <img src="/content/{{ img.url }}" class="" alt="{{ img.alt }}" />
     </figure>
     {% endfor %}
+    {% for video in page.heroVideo %}
+      <video class="m-hero__video" loop="loop" autoplay="true">
+        <source type="video/mp4" data-type="mp4" src="/content/{{video.url}}">
+      </video>
+    {% endfor %}
   </div>
 </div>

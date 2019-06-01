@@ -2,7 +2,6 @@
   float: right;
   margin: auto;
 
-
   @media all and (min-width: 500px){
     position: absolute;
     top: 1em;
@@ -53,6 +52,7 @@
   background: var(--secondary);
   box-shadow: 0 0 1px 1px var(--background);
   transition: all .5s ease;
+  display: block;
 
   .swap & {
     background-color: var(--invert-background);
@@ -127,7 +127,8 @@
       line-height: 1.5em;
       right: 10px;
       top: 10px;
-      min-width: 300px;
+      width: 310px;
+      max-width: 80vw;
       color: var(--invert-text);
       background: var(--invert-background);
       padding: 1em;
