@@ -1,20 +1,67 @@
 a {
-  color: var(--default-link);
+  color: var(--link);
   transition: all .3s ease;
+  position: relative;
+  display: inline-block;
 
-  .light & {
-    color: var(--light-link);
+  .swap & {
+    color: var(--swap-link);
+    transition: all .3s ease;
   }
-  
+
   &:hover,
   &:focus,
   &:active {
-    color: var(--default-link-hover);
+    color: var(--link-hover);
     transition: all .3s ease;
 
-    .light & {
-      color: var(--light-link-hover);
+    .swap & {
+      color: var(--swap-link-hover);
       transition: all .3s ease;
     }
   }
+
+  &::before,
+  &::after {
+    content: attr(data-title);
+    position: absolute;
+    display: inline-block;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    opacity: 0;
+    transition: all .7s ease;
+    transform: rotate(0deg) translateX(0px) skewX(0deg);
+  }
+
+  &::before {
+    color: green;
+
+    @include get-mode('dark') {
+      color: yellow;
+    }
+  }
+
+  &::after {
+    color: red;
+  }
+
+  &:hover {
+
+    &::before,
+    &::after {
+      opacity: .6;
+      transition: transform 0.7s ease, opacity 0.7s ease;
+    }
+
+    &::before {
+      transform: rotate(1deg) translateX(.1em) skewX(-1deg);
+    }
+
+    &::after {
+      transform: rotate(-1deg) translateX(-.1em) skewX(-1deg);
+    }
+
+  }
+
 }

@@ -1,10 +1,15 @@
 .m-toggle {
-  position: absolute;
-  top: 1em;
-  right: 1em;
-  height: 40px;
+  float: right;
   margin: auto;
-  text-align: center;
+
+  @media all and (min-width: 500px){
+    position: absolute;
+    top: 1em;
+    right: 1em;
+    height: 40px;
+    text-align: center;
+    float: none;
+  }
 
   input {
    position: absolute;
@@ -23,18 +28,55 @@
   font-size: 20px;
   height: 1em;
   width: 2em;
-  background: var(--light-background);
+  background: var(--invert-background);
   border-radius: 1em;
   transition: all .5s ease;
+
+  .swap & {
+    background-color: var(--invert-background);
+
+    @include get-mode('light'){
+      background-color: var(--background);
+    }
+
+    @include get-mode('dark'){
+      background-color: var(--invert-background);
+    }
+  }
 }
 
 .m-toggle__view {
   height: 1em;
   width: 1em;
   border-radius: 1em;
-  background: var(--default-secondary);
-  box-shadow: 0 0 1px 1px var(--light-background);
+  background: var(--secondary);
+  box-shadow: 0 0 1px 1px var(--background);
   transition: all .5s ease;
+  display: block;
+
+  .swap & {
+    background-color: var(--invert-background);
+
+    @include get-mode('light'){
+      background-color: var(--background);
+    }
+
+    // @include get-mode('dark'){
+    //   background-color: var(--invert-background);
+    // }
+  }
+}
+
+.m-toggle input:focus {
+
+  + .m-toggle__wrapper {
+
+
+    > .m-toggle__view {
+      background: var(--link);
+      box-shadow: 0 0 2px 1px var(--background);
+    }
+  }
 }
 
 .m-toggle input:focus {
@@ -52,13 +94,17 @@
 .m-toggle input:checked {
 
   + .m-toggle__wrapper {
-    background: var(--default-background);
+    background: var(--invert-background);
     transition: all .5s ease;
+
+    .swap & {
+        background-color: var(--background);
+    }
 
     > .m-toggle__view {
       transform: translate3d(100%, 0, 0);
-      background: var(--light-background);
-      box-shadow: 0 0 1px 1px var(--default-link);
+      background: var(--background);
+      box-shadow: 0 0 1px 1px var(--link);
       transition: all .5s ease;
     }
   }
@@ -68,9 +114,41 @@
     + .m-toggle__wrapper {
 
       > .m-toggle__view {
-        background: var(--default-link-hover);
+        background: var(--link-hover);
       }
     }
   }
 
+}
+
+.m-toggle__info {
+  position: relative;
+  display: inline-block;
+  text-align: left;
+
+  summary {
+    cursor: pointer;
+  }
+
+  details {
+
+
+    p {
+      border-radius: 5px;
+      position: absolute;
+      line-height: 1.5em;
+      right: 10px;
+      top: 10px;
+      width: 310px;
+      max-width: 80vw;
+      color: var(--invert-text);
+      background: var(--invert-background);
+      padding: 1em;
+
+      .swap & {
+        color: var(--swap-invert-text);
+        background: var(--swap-invert-background);
+      }
+    }
+  }
 }

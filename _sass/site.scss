@@ -1,3 +1,7 @@
+// ROOT MIXINS
+@import 'mixins/theme';
+
+// VARIABLES
 @import 'variables/normalize';
 @import 'variables/root';
 
@@ -6,6 +10,8 @@
 @import 'atoms/lists';
 @import 'atoms/image';
 @import 'atoms/article';
+@import 'atoms/multicolor';
+@import 'atoms/code';
 
 //// MOLECULES
 @import 'molecules/hero';
@@ -13,7 +19,6 @@
 @import 'molecules/stacks';
 @import 'molecules/toggle';
 @import 'molecules/footer';
-
 
 //// ORGANISMS
 @import 'organisms/content';
@@ -24,14 +29,14 @@
 @import 'utilities';
 
 html {
-    background-color: var(--default-background);
-    color: var(--default-text);
-    font-family: Helvetica, sans-serif;
-    transition: background-color .5s ease;
+  background-color: var(--background);
+  color: var(--text);
+  font-family: Helvetica, sans-serif;
+  transition: background-color .5s ease;
 
-  &.light {
-    background-color: var(--light-background);
-    color: var(--light-text);
+  &.swap {
+    background-color: var(--swap-background);
+    color: var(--swap-text);
     transition: background-color .5s ease;
   }
 }

@@ -5,12 +5,12 @@
   publish = "_site"
 
 [deploy]
-  command = "npm run build"
+  command = "jekyll build"
   functions = "./"
   publish = "_site"
 
 [dev]
-  command = "npm run"
+  command = "jekyll serve"
   functions = "./"
 
 

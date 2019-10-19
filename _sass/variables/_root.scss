@@ -2,13 +2,67 @@
   --default-background:  rgb(36, 36, 36);
   --default-secondary: rgb(50, 3, 88);
   --default-text: rgb(235, 235, 235);
-  --default-link: rgb(108, 3, 191);
+  --default-text-invert: rgb(36, 36, 36);
+  --default-link: rgb(170, 106, 250);
   --default-link-hover: rgb(125, 0, 170);
   --default-meta: rgb(140, 140, 140);
 
   --light-background: var(--default-text);
   --light-text: var(--default-background);
+  --light-text-invert: var(--default-text);
   --light-link: rgb(108, 3, 191);
   --light-link-hover: rgb(61, 2, 136);
   --light-meta: rgb(99, 99, 99);
+
+  --background: var(--default-background);
+  --invert-background: var(--default-text);
+  --secondary: var(--default-secondary);
+  --text: var(--default-text);
+  --invert-text: var(--default-text-invert);
+  --link: var(--default-link);
+  --link-hover: var(--default-link-hover);
+  --meta: var(--default-meta);
+}
+
+
+@include get-mode('light') {
+  :root {
+    --background: var(--light-background);
+    --invert-background: var(--default-background);
+    --secondary: var(--light-secondary);
+    --text: var(--light-text);
+    --invert-text: var(--default-text);
+    --link: var(--light-link);
+    --link-hover: var(--light-link-hover);
+    --meta: var(--light-meta);
+
+    --swap-background: var(--default-background);
+    --swap-invert-background: var(--light-background);
+    --swap-text: var(--default-text);
+    --swap-invert-text: var(--default-text-invert);
+    --swap-link: var(--link);
+    --swap-link-hover: var(--light-link-hover);
+    --swap-meta: var(--light-meta);
+  }
+}
+
+@include get-mode('dark') {
+  :root {
+    --background: var(--default-background);
+    --invert-background: var(--default-text);
+    --secondary: var(--default-secondary);
+    --text: var(--default-text);
+    --invert-text: var(--light-text);
+    --link: var(--default-link);
+    --link-hover: var(--default-link-hover);
+    --meta: var(--default-meta);
+
+    --swap-background: var(--default-text);
+    --swap-invert-background: var(--default-background);
+    --swap-text: var(--light-text);
+    --swap-invert-text: var(--default-text);
+    --swap-link: rgb(108, 3, 191);
+    --swap-link-hover: rgb(61, 2, 136);
+    --swap-meta: rgb(99, 99, 99);
+  }
 }

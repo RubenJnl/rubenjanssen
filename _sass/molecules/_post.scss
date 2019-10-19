@@ -17,6 +17,20 @@
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
+    margin: 0 0 2em;
+    position: relative;
+
+    &:after {
+      position: absolute;
+      content: '';
+      bottom: -1em;
+      left: 0;
+      right: 0;
+      height: 1px;
+      max-width: 20em;
+      background-color: var(--meta);
+      opacity: .6;
+    }
   }
 
   .m-post-meta {
@@ -29,13 +43,9 @@
 }
 
 .m-post-meta {
-  color: var(--default-meta);
+  color: var(--meta);
 
   &.m-post-meta--small {
     font-size: .85em;
-  }
-
-  .light & {
-    color: var(--light-meta);
   }
 }

@@ -1,0 +1,50 @@
+.a-multi {
+  position: relative;
+  display: inline-block;
+  transform: skewX(0deg);
+  transition: transform 0.7s ease;
+
+  span {
+    position: absolute;
+    display: inline-block;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    opacity: 0;
+    transition: transform 0.7s ease, opacity 0.7s ease;
+    transform: rotate(0deg) translateX(0px) skewX(0deg);
+
+    &:nth-child(1) {
+      color: green;
+    }
+    &:nth-child(2) {
+      color: red;
+    }
+
+    &:nth-child(3) {
+      color: yellow;
+    }
+  }
+
+  &:hover {
+    transform: skewX(5deg);
+    transition: transform 0.7s ease;
+
+    span {
+      opacity: .6;
+      transition: transform 0.7s ease, opacity 0.7s ease;
+
+      &:nth-child(1) {
+        transform: rotate(3deg) translateX(.25em) skewX(-5deg);
+      }
+
+      &:nth-child(2) {
+        transform: rotate(-2deg) translateX(-.2em) skewX(-5deg);
+      }
+
+      &:nth-child(3) {
+        transform: rotate(1deg) translateX(.25em) skewX(-5deg);
+      }
+    }
+  }
+}

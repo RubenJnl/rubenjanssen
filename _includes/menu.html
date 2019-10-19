@@ -7,7 +7,7 @@
 
             {% assign pages = site.pages | sort: 'pId' %}
             {% for my_page in pages %}
-            {% if my_page.title %}
+            
 
                 {% if page.url == my_page.url %}
                     <li class="u-active">
@@ -27,7 +27,7 @@
                     </li>
                 {% endif %}
 
-            {% endif %}
+
             {% endfor %}
 
 

@@ -1,5 +1,9 @@
 .m-hero {
-  background-color: var(--light-background);
+  background-color: var(--invert-background);
+
+  .swap & {
+    background-color: var(--background);
+  }
 
   .o-container {
     padding: 0;
@@ -17,4 +21,12 @@
     display: block;
     margin: 0 auto;
   }
+}
+
+.m-hero__video {
+  min-height: 150px;
+  max-height: 50vh;
+  max-width: 100vw;
+  display: block;
+  margin: 0 auto;
 }

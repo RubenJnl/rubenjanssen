@@ -5,13 +5,13 @@
     <div class="o-flex o-flex--between">
 
       <div class="o-flex">
-        <p> made with ♡ </p>
+        <p> made with ♡ &amp; ☕️</p>
       </div>
 
       <div class="o-flex__item">
         <ul class="a-list--reset a-list--inline a-list--separator">
           {% for s in site.social %}
-            <li><a href="{{s.url}}" target="_blank">{{s.name}}</a></li>
+            <li><a href="{{s.url}}" target="_blank" rel="noopener" data-title="{{s.name}}">{{s.name}}</a></li>
           {% endfor %}
         </ul>
       </div>

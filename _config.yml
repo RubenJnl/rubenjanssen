@@ -27,6 +27,8 @@ social:
     url: https://twitter.com/RubenJ
   - name: Facebook
     url: https://www.facebook.com/RubenJanssen.nl
+  - name: Github
+    url: https://github.com/RubenJnl/
   - name: Last.fm
     url: https://www.last.fm/user/RubenJ_nl
   - name: 500px
@@ -37,6 +39,11 @@ social:
 markdown: kramdown
 plugins:
   # - jekyll-feed
+
+collections:
+  pages:
+    output: true
+    permalink: /:title
 
 sass:
   sass_dir: _sass
