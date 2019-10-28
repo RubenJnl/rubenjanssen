@@ -1,20 +1,21 @@
-<form action="/" method="post" id="contact" data-netlify="true">
+<form action="/" method="post" id="contact" data-netlify="true" action="/">
   <fieldset>
     <legend>Contact</legend>
-    <div>
+    <div class="form__input-wrapper">
       <label for="name">Name</label>
       <input id="name" type="text" required />
     </div>
-    <div>
+    <div class="form__input-wrapper">
       <label for="email">E-mail address</label>
       <input id="email" type="email" required />
     </div>
-    <div>
+    <div class="form__input-wrapper">
       <label for="message">Message</label>
       <textarea id="message" required ></textarea>
     </div>
 
-    <div>
+    <div class="form__submit-wrapper">
+      <button type="reset">clear</button>
       <button type="submit">Send</button>
     </div>
   </fieldset>
