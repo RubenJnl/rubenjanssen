@@ -19,7 +19,7 @@ email: site@rubenjanssen.nl
 description: >- # this means to ignore newlines until "baseurl:"
   Portfolio Ruben Janssen
 baseurl: "" # the subpath of your site, e.g. /blog
-siteUrl: https://rubenjanssen.me
+siteUrl: https://rubens.website
 url: "https://rubens.website" # the base hostname & protocol for your site, e.g. http://example.com
 exclude: ["*.xml","*.log","Gemfile", "*.json", "images", "deploy" ,"node_modules", "README.md"]
 social:
