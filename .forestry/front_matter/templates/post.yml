@@ -1,0 +1,32 @@
+---
+label: post
+hide_body: false
+fields:
+- type: text
+  name: layout
+  label: layout
+- type: text
+  name: title
+  label: title
+- type: datetime
+  name: date
+  label: date
+- type: text
+  name: categories
+  label: categories
+- type: list
+  name: tags
+  label: tags
+- type: text
+  name: permalink
+  label: permalink
+- type: field_group_list
+  name: heroImg
+  label: heroImg
+  fields:
+  - type: file
+    name: url
+    label: url
+  - type: text
+    name: alt
+    label: alt
