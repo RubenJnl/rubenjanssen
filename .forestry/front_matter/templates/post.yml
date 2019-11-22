@@ -30,3 +30,16 @@ fields:
   - type: text
     name: alt
     label: alt
+- name: herovideo
+  type: field_group_list
+  fields:
+  - name: url
+    type: file
+    config:
+      maxSize: 250
+    label: url
+  config:
+    min: 
+    max: 
+    labelField: 
+  label: heroVideo
