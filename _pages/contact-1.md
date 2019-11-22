@@ -3,7 +3,6 @@ layout: contact
 title: Test
 pId: "2"
 ogImg: "/static/images/Ruben.jpg"
-published: false
 
 ---
 # Welcome Test
