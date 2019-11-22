@@ -1,5 +1,5 @@
 ---
-layout: contact
+layout: default
 title: Test
 pId: "2"
 ogImg: "/static/images/Ruben.jpg"
