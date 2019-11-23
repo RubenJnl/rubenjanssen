@@ -14,7 +14,7 @@ fields:
 - type: file
   name: ogImg
   label: ogImg
-- name: heroimg
+- name: heroImg
   type: field_group_list
   fields:
   - name: url
