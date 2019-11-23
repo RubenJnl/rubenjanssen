@@ -11,18 +11,43 @@ published: false
 ---
 I started sharing posts about projects, so why not share what I use. There are [quite a lot examples out there](https://github.com/wesbos/awesome-uses){:data-title="quite a lot examples out there"}. 
 
-## Editor
+I'll try to keep it up to date but I haven't added all items from my company machine yet. So more updates coming in the near future... 🎆
+
+## 📝 Editor
 
 * [Atom](https://atom.io/){:data-title="Atom"}, still very fond of this little editor.
 * [Visual Studio Code](https://code.visualstudio.com/){:data-title="Visual Studio Code} Just to see what te fuzz is all about. Can't get used to the quirky navigation panel though.
 
-### Main plugins
+### 🔌 Main plugins
 
 * [file-icons](https://atom.io/packages/file-icons){:data-title="file-icons"} Basic file icon set that works well with my dark theme's
 * [atom-beautify](https://atom.io/packages/atom-beautify){:data-title="atom-beautify"} Sometimes you just need something to clean up your mess. 😇
 * [color-picker](https://atom.io/packages/color-picker){:data-title="color-picker"} just because I don't use designs on some of my personal projects it comes in handy.
 
-### Visual
+### 🎨 Visual
 
 * Theme [DuoTone dark amethyst](https://atom.io/themes/duotone-dark-amethyst-syntax){:data-title="DuoTone dark amethyst"} Because I'm a sucker for dark mode and dark themes.
 * Font [Fira Code](https://github.com/tonsky/FiraCode){:data-title="Fira Code"}. I only started using this font recently. Not sure if it's a keeper. The operators look really nice it's a bit hard in day-to-day use. Maybe I have to get used to it though.
+
+## ⬛️ Terminal
+
+* [iTerm 2](https://iterm2.com/){:data-title="iTerm 2"} because configuration & personalisation is key.
+* [oh my zsh](https://ohmyz.sh/){:data-title="oh my zsh"} because more (easy) personalisation
+* [Meslo powerline font](https://github.com/powerline/fonts/blob/master/Meslo%20Slashed/Meslo%20LG%20M%20Regular%20for%20Powerline.ttf){:data-title="Meslo powerline font"} 
+* [Agnoster](https://github.com/agnoster/agnoster-zsh-theme){:data-title="Agnoster"} zsh theme
+
+I also use a custom zsh config, I'll dedicate a post to that later 🙃
+
+## 💻 Machines
+
+* MacBook Air 13" 2013
+  * Magic Keyboard 1
+  * Magic Mouse
+* MacBook Pro 15" 2015
+  * Magic Keyboard 2
+  * Magic Mouse
+* 27" Thunderbold Display
+* iPhone 11
+* iPhone 7 _(test phone)_
+* iPad (The New, gen 3) _(test tablet)_
+* Samsung J6 _(test phone)_
