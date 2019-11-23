@@ -6,23 +6,13 @@
 @import 'variables/root';
 
 //// ATOMS
-@import 'atoms/links';
-@import 'atoms/lists';
-@import 'atoms/image';
-@import 'atoms/article';
-@import 'atoms/multicolor';
+@import 'atoms/all';
 
 //// MOLECULES
-@import 'molecules/hero';
-@import 'molecules/post';
-@import 'molecules/stacks';
-@import 'molecules/toggle';
-@import 'molecules/footer';
+@import 'molecules/all';
 
 //// ORGANISMS
-@import 'organisms/content';
-@import 'organisms/flex';
-@import 'organisms/header';
+@import 'organisms/all';
 
 //// UTILITIES
 @import 'utilities';

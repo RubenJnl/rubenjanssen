@@ -3,6 +3,7 @@ a {
   transition: all .3s ease;
   position: relative;
   display: inline-block;
+  text-decoration: none;
 
   .swap & {
 
@@ -46,7 +47,9 @@ a {
     // mix-blend-mode: color-burn;
   }
 
-  &:hover {
+  &:hover,
+  &:focus {
+    outline: none;
 
     &::before,
     &::after {

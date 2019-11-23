@@ -10,6 +10,8 @@
   </script>
 
   <!-- Sentry JS logging -->
+  <link rel="preload" href="https://browser.sentry-cdn.com/5.1.1/bundle.min.js" as="script" crossorigin="/">
+
   <script src="https://browser.sentry-cdn.com/5.1.1/bundle.min.js" crossorigin="anonymous"></script>
   <script>Sentry.init({ dsn: 'https://10988e5ad4184c13949f9495c3aa882a@sentry.io/1448129' });</script>
 {% endif %}

@@ -1,13 +1,13 @@
 .m-toggle {
-  float: right;
-  margin: auto;
-
+  display: block;
+  text-align: right;
+  margin: 1em;
 
   @media all and (min-width: 500px){
     position: absolute;
+    margin: 0;
     top: 1em;
     right: 1em;
-    height: 40px;
     text-align: center;
     float: none;
   }
@@ -34,7 +34,7 @@
   transition: all .5s ease;
 
   .swap & {
-    
+
   }
 }
 
@@ -45,18 +45,19 @@
   background: var(--secondary);
   box-shadow: 0 0 1px 1px var(--background);
   transition: all .5s ease;
-  //
-  // .swap & {
-  //   background-color: var(--invert-background);
-  //
-  //   @include get-mode('light'){
-  //     background-color: var(--background);
-  //   }
-  //
-  //   // @include get-mode('dark'){
-  //   //   background-color: var(--invert-background);
-  //   // }
-  // }
+  display: block;
+
+  .swap & {
+    background-color: var(--invert-background);
+
+    @include get-mode('light'){
+      background-color: var(--background);
+    }
+
+    // @include get-mode('dark'){
+    //   background-color: var(--invert-background);
+    // }
+  }
 }
 
 .m-toggle input:focus {
@@ -67,6 +68,18 @@
     > .m-toggle__view {
       background: var(--link);
       box-shadow: 0 0 2px 1px var(--background);
+    }
+  }
+}
+
+.m-toggle input:focus {
+
+  + .m-toggle__wrapper {
+
+
+    > .m-toggle__view {
+      background: var(--default-link);
+      box-shadow: 0 0 2px 1px var(--light-background);
     }
   }
 }
@@ -119,7 +132,8 @@
       line-height: 1.5em;
       right: 10px;
       top: 10px;
-      min-width: 300px;
+      width: 310px;
+      max-width: 80vw;
       color: var(--invert-text);
       background: var(--invert-background);
       padding: 1em;

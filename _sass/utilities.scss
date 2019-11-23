@@ -1,4 +1,4 @@
-.u-screenreader {
+@mixin hide() {
   border: 0;
   clip: rect(0 0 0 0);
   height: 1px;
@@ -8,4 +8,16 @@
   position: absolute;
   width: 1px;
   margin: 0;
+}
+
+@mixin unhide(){
+  clip: none;
+  height: auto;
+  width: auto;
+  margin: unset;
+  position: relative;
+}
+
+.u-screenreader {
+  @include hide()
 }

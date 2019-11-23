@@ -1,0 +1,24 @@
+pre {
+  margin: .5em .5em 1em 1em;
+  position: relative;
+  font-size: .9em;
+
+  &:before {
+    content: "";
+    position: absolute;
+    top: -.5em;
+    right: -.5em;
+    bottom: -.5em;
+    left: -1em;
+    background-color: var(--invert-background);
+    opacity: .1;
+
+    @include get-mode('light') {
+      background-color: var(--swap-invert-background);
+    }
+  }
+}
+
+code {
+  // opacity: 1;
+}

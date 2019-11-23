@@ -2,7 +2,6 @@ import * as LS from './localstorage.js';
 
 const theme = () => {
   replaceCurrent();
-  // getUserSetting();
   bind();
 }
 
