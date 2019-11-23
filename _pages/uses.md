@@ -9,7 +9,7 @@ heroimg:
 published: false
 
 ---
-I started sharing posts about projects, so why not share what I use. There are [quite a lot examples out there](https://github.com/wesbos/awesome-uses){:data-title="quite a lot examples out there"}. 
+I started sharing posts about projects, so why not share what I use. There are [quite a lot examples out there](https://github.com/wesbos/awesome-uses){:data-title="quite a lot examples out there"}.
 
 I'll try to keep it up to date but I haven't added all items from my company machine yet. So more updates coming in the near future... 🎆
 
@@ -33,12 +33,12 @@ I'll try to keep it up to date but I haven't added all items from my company mac
 
 * [iTerm 2](https://iterm2.com/){:data-title="iTerm 2"} because configuration & personalisation is key.
 * [oh my zsh](https://ohmyz.sh/){:data-title="oh my zsh"} because more (easy) personalisation
-* [Meslo powerline font](https://github.com/powerline/fonts/blob/master/Meslo%20Slashed/Meslo%20LG%20M%20Regular%20for%20Powerline.ttf){:data-title="Meslo powerline font"} 
+* [Meslo powerline font](https://github.com/powerline/fonts/blob/master/Meslo%20Slashed/Meslo%20LG%20M%20Regular%20for%20Powerline.ttf){:data-title="Meslo powerline font"}
 * [Agnoster](https://github.com/agnoster/agnoster-zsh-theme){:data-title="Agnoster"} zsh theme
 
 I also use a custom zsh config, I'll dedicate a post to that later 🙃
 
-## 💻 Machines
+## 💻⌨️🖱🖥📱 Machines
 
 * MacBook Air 13" 2013
   * Magic Keyboard 1
