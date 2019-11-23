@@ -1,0 +1,136 @@
+.m-nav {
+
+}
+
+.m-nav__items {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  @media all and (min-width: 500px){
+    justify-content: flex-end;
+  }
+
+  @media all and (min-width: 1100px){
+    justify-content: flex-start;
+  }
+}
+
+.m-nav__item {
+  display: inline-block;
+  vertical-align: baseline;
+  background-color: rgba(36, 36, 36 , .3);
+  border-radius: 8px 28px 8px 28px;
+  transition: all .3s ease;
+
+  .swap & {
+    background-color: rgba(235, 235, 235, .3);
+  }
+
+  @include get-mode('dark') {
+    background-color: rgba(235, 235, 235, .3);
+
+    .swap & {
+      background-color: rgba(36, 36, 36 , .3);
+    }
+  }
+}
+
+.m-nav__item:not(.u-active) {
+
+  &:hover,
+  &:focus-within {
+    background-color: rgba(36, 36, 36 , .5);
+    border-radius: 28px 8px 28px 8px;
+    transition: all .3s ease;
+
+    @include get-mode('dark') {
+      background-color: rgba(235, 235, 235, .8);
+    }
+
+    .swap & {
+      background-color: rgba(235, 235, 235, .8);
+
+      @include get-mode('dark') {
+        background-color: rgba(36, 36, 36 , .5);
+      }
+    }
+  }
+}
+
+.m-nav__item-link {
+  padding: .6em 1em;
+  line-height: 1.5em;
+  display: inline-block;
+  transform: rotate(0deg) skewX(10deg);
+  transition: all .3s ease;
+}
+
+.m-nav__item:not(.u-active) .m-nav__item-link {
+  &:hover,
+  &:focus,
+  &:active {
+    color: var(--link-hover);
+    transition: all .3s ease;
+
+    .swap & {
+      color: var(--swap-link-hover);
+      transition: all .3s ease;
+    }
+  }
+
+  &::before,
+  &::after {
+    content: attr(data-title);
+    position: absolute;
+    display: inline-block;
+    top: .6em;
+    left: 1em;
+    z-index: -1;
+    opacity: 0;
+    transition: all .7s ease;
+    transform: rotate(0deg) translateY(0px) translateX(0px);
+  }
+
+  &::before {
+    color: yellow;
+
+    .swap & {
+      color: green;
+    }
+
+    @include get-mode('dark') {
+      color: green;
+
+      .swap & {
+        color: yellow;
+      }
+    }
+  }
+
+  &::after {
+    color: red;
+  }
+
+  &:hover,
+  &:focus {
+    outline: none;
+    transform: rotate(360deg) skewX(10deg);
+
+    &::before,
+    &::after {
+      opacity: .6;
+      transition: transform 0.7s ease, opacity 0.7s ease;
+    }
+
+    &::before {
+      transform: rotate(0deg) translateY(.75em) translateX(-.5em);
+    }
+
+    &::after {
+      transform: rotate(0deg) translateY(-.75em) translateX(.5em);
+    }
+
+  }
+
+}

@@ -133,7 +133,6 @@
 
   details {
 
-
     p {
       border-radius: 5px;
       position: absolute;
@@ -145,10 +144,12 @@
       color: var(--invert-text);
       background: var(--invert-background);
       padding: 1em;
+      box-shadow: 0 0 1px 1px var(--background);
 
       .swap & {
         color: var(--swap-invert-text);
         background: var(--swap-invert-background);
+        box-shadow: 0 0 1px 1px var(--invert-background);
       }
     }
   }

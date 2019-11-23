@@ -1,6 +1,6 @@
 ---
 layout: default
-title: uses
+title: Uses
 pId: 2
 ogImg: "/content/2019/Editor_BMW-Boxer.png"
 heroImg:

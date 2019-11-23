@@ -9,6 +9,9 @@ a {
     color: var(--swap-link);
     transition: all .3s ease;
   }
+}
+
+a:not(.m-nav__item-link){
 
   &:hover,
   &:focus,

@@ -1,36 +1,46 @@
-<nav id="site-nav" class="o-container">
+<nav id="site-nav" class="m-nav">
 
-    <h2 class="u-screenreader">Menu </h2>
+  <h2 class="u-screenreader">Menu </h2>
 
-    <div class="c-menu__items">
-        <ul class="a-list-reset">
+  <div class="m-nav__item-links-wrapper">
+    <ul class="a-list--reset m-nav__items">
+      {% if page.url == '/' %}
+      <li class="u-active m-nav__item">
+        <span class="m-nav__item-link">Home</span>
+      </li>
+      {% else %}
+      <li class="m-nav__item">
+        <a href="/" class="m-nav__item-link" data-title="Home">Home</a>
+      </li>
+      {% endif %}
 
-            {% assign pages = site.pages | sort: 'pId' %}
-            {% for my_page in pages %}
-            
+      {% assign pages = site.pages | sort: 'pId' %}
+      {% for my_page in pages %}
+      
+      {% if page.url == my_page.url %}
+      <li class="u-active m-nav__item">
+        {% if my_page.menu %}
+        <span class="m-nav__item-link">{{ my_page.menu }}</span>
+        {% else %}
+        <span class="m-nav__item-link">{{ my_page.title }}</span>
+        {% endif %}
+      </li>
+      {% else %}
+      <!-- for now hide contact = pId 10 -->
+        {% if my_page.pId != 10 %}
+        <li class="m-nav__item">
+          {% if my_page.menu %}
+          <a href="{{ my_page.url | prepend: site.baseurl }}" class="m-nav__item-link" data-title="{{ my_page.menu }}">{{ my_page.menu }}</a>
+          {% else %}
+          <a href="{{ my_page.url | prepend: site.baseurl }}" class="m-nav__item-link" data-title="{{ my_page.title }}">{{ my_page.title }}</a>
+          {% endif %}
+        </li>
+        {% endif %}
+      {% endif %}
 
-                {% if page.url == my_page.url %}
-                    <li class="u-active">
-                        {% if my_page.menu %}
-                          <span class="c-menu__item">{{ my_page.menu }}</span>
-                        {% else %}
-                          <span class="c-menu__item">{{ my_page.title }}</span>
-                        {% endif %}
-                    </li>
-                {% else %}
-                    <li>
-                        {% if my_page.menu %}
-                         <a href="{{ my_page.url | prepend: site.baseurl }}" class="c-menu__item">{{ my_page.menu }}</a>
-                        {% else %}
-                         <a href="{{ my_page.url | prepend: site.baseurl }}" class="c-menu__item">{{ my_page.title }}</a>
-                        {% endif %}
-                    </li>
-                {% endif %}
+      {% endfor %}
 
 
-            {% endfor %}
-
-
-        </ul>
-    </div>
+    </ul>
+  </div>
 </nav>
