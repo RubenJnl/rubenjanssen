@@ -40,14 +40,17 @@ I also use a custom zsh config, I'll dedicate a post to that later 🙃
 
 ## 💻⌨️🖱🖥📱 Machines
 
+Shall I go for the new 16" MacBook Pro? 🤔 With a descent keyboard after years of horrible keyboards.
+
 * MacBook Air 13" 2013
   * Magic Keyboard 1
   * Magic Mouse
-* MacBook Pro 15" 2015
+* MacBook Pro 15" 2015 
   * Magic Keyboard 2
   * Magic Mouse
 * 27" Thunderbold Display
 * iPhone 11
+* Apple Watch 4
 * iPhone 7 _(test phone)_
-* iPad (The New, gen 3) _(test tablet)_
-* Samsung J6 _(test phone)_
+* iPad (The New, gen 3) _(semi slow device, test tablet)_
+* Samsung J6 _(slow device, test phone)_
