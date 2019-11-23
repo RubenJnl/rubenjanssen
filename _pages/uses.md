@@ -38,6 +38,15 @@ I'll try to keep it up to date but I haven't added all items from my company mac
 
 I also use a custom zsh config, I'll dedicate a post to that later 🙃
 
+## 🖥 Desktop Apps
+
+* [Alfred 4](https://www.alfredapp.com/){:data-title="Alfred 4"} the ultimate spotligt alternative
+* [Dato](https://apps.apple.com/nl/app/dato/id1470584107?l=en&mt=12){:data-title="Dato"} For quick access to my calendar.
+* [Firefox Developer Edition](https://www.mozilla.org/nl/firefox/developer/){:data-title="Firefox Developer Edition"}
+* [Firefox](https://www.mozilla.org/nl/firefox/new/){:data-title="Firefox}
+* [Coda 2](https://panic.com/coda/){:data-title="Coda 2"} For the times I still need an (s)ftp tool
+* [1 Password](https://1password.com/){:data-title="1 Password"} (for now) Used it for many years, bought multiple versions. Only thing is they don't offer licenses anymore, only subscriptions. So I might consider going for a new password manager.
+
 ## 💻⌨️🖱🖥📱 Machines
 
 Shall I go for the new 16" MacBook Pro? 🤔 With a descent keyboard after years of horrible keyboards.
