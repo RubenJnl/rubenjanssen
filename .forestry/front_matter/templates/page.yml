@@ -14,3 +14,5 @@ fields:
 - type: file
   name: ogImg
   label: ogImg
+pages:
+- _pages/uses.md
