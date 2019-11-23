@@ -34,6 +34,10 @@
       background-color: rgba(36, 36, 36 , .3);
     }
   }
+
+  &.u-active {
+    border-radius: 28px 8px 28px 8px;
+  }
 }
 
 .m-nav__item:not(.u-active) {
