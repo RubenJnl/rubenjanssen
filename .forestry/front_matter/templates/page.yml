@@ -14,5 +14,25 @@ fields:
 - type: file
   name: ogImg
   label: ogImg
+- name: heroimg
+  type: field_group_list
+  fields:
+  - name: url
+    type: file
+    config:
+      maxSize: 250
+    label: url
+  - name: alt
+    type: text
+    config:
+      required: false
+    label: alt
+    description: Alt tekst
+  config:
+    min: 
+    max: 
+    labelField: 
+  label: heroImg
+  description: Hero image
 pages:
 - _pages/uses.md
