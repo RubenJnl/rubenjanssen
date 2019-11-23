@@ -6,7 +6,6 @@ ogImg: "/content/2019/Editor_BMW-Boxer.png"
 heroimg:
 - url: "/content/2019/Editor_BMW-Boxer.png"
   alt: Screenshot of BMW Boxer project Atom editor and iTerm
-published: false
 
 ---
 I started sharing posts about projects, so why not share what I use. There are [quite a lot examples out there](https://github.com/wesbos/awesome-uses){:data-title="quite a lot examples out there"}.
