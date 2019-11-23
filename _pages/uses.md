@@ -9,7 +9,7 @@ heroimg:
 published: false
 
 ---
-I started sharing posts about projects, so why not share what I use. There are [quite a lot examples out there](https://github.com/wesbos/awesome-uses){data-title="quite a lot examples out there"}
+I started sharing posts about projects, so why not share what I use. There are [quite a lot examples out there](https://github.com/wesbos/awesome-uses){:data-title="quite a lot examples out there"}
 
 ## Editor
 
