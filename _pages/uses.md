@@ -46,6 +46,14 @@ I also use a custom zsh config, I'll dedicate a post to that later 🙃
 * [Firefox](https://www.mozilla.org/nl/firefox/new/){:data-title="Firefox}
 * [Coda 2](https://panic.com/coda/){:data-title="Coda 2"} For the times I still need an (s)ftp tool
 * [1 Password](https://1password.com/){:data-title="1 Password"} (for now) Used it for many years, bought multiple versions. Only thing is they don't offer licenses anymore, only subscriptions. So I might consider going for a new password manager.
+* [CleanMyMac X](https://macpaw.com/cleanmymac){:data-title="CleanMyMac X"} Just an easy way to keep it all cluter free
+* [Spotify](https://www.spotify.com/){:data-title="Spotify"} 
+* [MacOS Catalina](https://www.apple.com/macos/){:data-title="MacOS Catalina"} software
+  * Mail
+  * Notes
+  * Calendar
+  * Photos
+  * Home
 
 ## 💻⌨️🖱🖥📱 Machines
 
