@@ -3,6 +3,7 @@ a {
   transition: all .3s ease;
   position: relative;
   display: inline-block;
+  text-decoration: none;
 
   .swap & {
     color: var(--swap-link);
@@ -46,7 +47,9 @@ a {
     color: red;
   }
 
-  &:hover {
+  &:hover,
+  &:focus {
+    outline: none;
 
     &::before,
     &::after {
