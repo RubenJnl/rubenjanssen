@@ -13,8 +13,10 @@ layout: compress
     <ul>
       <li><a href="#main-content">Jump to content</a></li>
       <!-- <li><a href="#site-nav">Jump to navigation</a></li> -->
-      {% if page.layout == 'post' %}
-      <li><a href="#posts">Jump to posts list</li>
+      {% if page.layout != 'post' %}
+      <li><a href="#postlist">Jump to posts list</li>
+      {% else %}
+      <li><a href="#posts">Jump to post</li>
       {% endif %}
       <li><a href="#footer">Jump to contact</a></li>
     </ul>
@@ -27,16 +29,18 @@ layout: compress
       <div class="o-content">
         {{ content }}
       </div>
+
+      {% if page.layout != 'post' %}
+        <div class="o-container" id="postlist">
+          <div class="o-content">
+            {% include postlist.html %}
+
+          </div>
+        </div>
+      {% endif %}
     </div>
 
-    {% if page.layout != 'post' %}
-      <div class="o-container">
-        <div class="o-content">
-          {% include postlist.html %}
 
-        </div>
-      </div>
-    {% endif %}
 
 
     {% include footer.html %}

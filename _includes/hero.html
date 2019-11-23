@@ -3,12 +3,12 @@
     {{page.hero}}
     {% for img in page.heroImg %}
     <figure class="m-hero__image">
-      <img src="/content/{{ img.url }}" class="" alt="{{ img.alt }}" />
+      <img src="{{ img.url }}" class="" alt="{{ img.alt }}" />
     </figure>
     {% endfor %}
     {% for video in page.heroVideo %}
       <video class="m-hero__video" loop="loop" autoplay="true">
-        <source type="video/mp4" data-type="mp4" src="/content/{{video.url}}">
+        <source type="video/mp4" data-type="mp4" src="{{video.url}}">
       </video>
     {% endfor %}
   </div>

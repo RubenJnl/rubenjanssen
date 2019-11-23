@@ -6,7 +6,7 @@ categories:
 tags: [jekyll, lighthouse]
 permalink: small-optimization
 heroVideo:
-  - url: 2019/perfect-score.mp4
+  - url: /content/2019/perfect-score.mp4
 ---
 
 Co-workers know that I can be very picky about a solid semantic structure.

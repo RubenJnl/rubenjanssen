@@ -2,7 +2,7 @@
 layout: post
 title: 'The advantage of modern API''s: Maps'
 date: 2019-10-28T19:00:00.000+00:00
-categories: 
+categories:
 tags:
 - html
 - native elements
@@ -13,7 +13,7 @@ tags:
 - maps
 permalink: API-Maps
 heroImg:
-- url: 2019/Maps-API-GPX-Route.png
+- url: /content/2019/Maps-API-GPX-Route.png
   alt: Example of a maps API with a GPX Route rendered on it.
 
 ---

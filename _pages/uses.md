@@ -3,7 +3,7 @@ layout: default
 title: uses
 pId: 2
 ogImg: "/content/2019/Editor_BMW-Boxer.png"
-heroimg:
+heroImg:
 - url: "/content/2019/Editor_BMW-Boxer.png"
   alt: Screenshot of BMW Boxer project Atom editor and iTerm
 
@@ -46,7 +46,7 @@ I also use a custom zsh config, I'll dedicate a post to that later 🙃
 * [Coda 2](https://panic.com/coda/){:data-title="Coda 2"} For the times I still need an (s)ftp tool
 * [1 Password](https://1password.com/){:data-title="1 Password"} (for now) Used it for many years, bought multiple versions. Only thing is they don't offer licenses anymore, only subscriptions. So I might consider going for a new password manager.
 * [CleanMyMac X](https://macpaw.com/cleanmymac){:data-title="CleanMyMac X"} Just an easy way to keep it all cluter free
-* [Spotify](https://www.spotify.com/){:data-title="Spotify"} 
+* [Spotify](https://www.spotify.com/){:data-title="Spotify"}
 * [MacOS Catalina](https://www.apple.com/macos/){:data-title="MacOS Catalina"} software
   * Mail
   * Notes
@@ -61,7 +61,7 @@ Shall I go for the new 16" MacBook Pro? 🤔 With a descent keyboard after years
 * MacBook Air 13" 2013
   * Magic Keyboard 1
   * Magic Mouse
-* MacBook Pro 15" 2015 
+* MacBook Pro 15" 2015
   * Magic Keyboard 2
   * Magic Mouse
 * 27" Thunderbold Display

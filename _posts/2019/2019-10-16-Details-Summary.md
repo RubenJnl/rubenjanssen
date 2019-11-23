@@ -5,9 +5,6 @@ date:   2019-10-16 19:00:00 +0200
 categories:
 tags: [html, native elements, development, JavaScript]
 permalink: details-disclosure
-#heroImg:
-#  - url: 2019/jekyll-netlify.jpg
-#    alt : Jekyll & Netlify logo
 ---
 
 You might have seen it, I've used this element on top of the pages for some time now*.
