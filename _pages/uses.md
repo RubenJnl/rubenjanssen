@@ -13,14 +13,14 @@ I started sharing posts about projects, so why not share what I use. There are [
 
 ## Editor
 
-[Atom](https://atom.io/){data-title="Atom"}, still very fond of this little editor.
+[Atom](https://atom.io/){:data-title="Atom"}, still very fond of this little editor.
 
 ### Main plugins
 
-* [color-picker](https://atom.io/packages/color-picker){data-title="color-picker"}
-* [file-icons](https://atom.io/packages/file-icons){data-title="file-icons"}
-* [atom-beautify](https://atom.io/packages/atom-beautify){data-title="atom-beautify"}
+* [color-picker](https://atom.io/packages/color-picker){:data-title="color-picker"}
+* [file-icons](https://atom.io/packages/file-icons){:data-title="file-icons"}
+* [atom-beautify](https://atom.io/packages/atom-beautify){:data-title="atom-beautify"}
 
 ### Themes
 
-* [DuoTone dark amethyst](https://atom.io/themes/duotone-dark-amethyst-syntax){data-title="DuoTone dark amethyst"}
+* [DuoTone dark amethyst](https://atom.io/themes/duotone-dark-amethyst-syntax){:data-title="DuoTone dark amethyst"}
