@@ -19,7 +19,7 @@ I started sharing posts about projects, so why not share what I use. There are [
 
 * [color-picker](https://atom.io/packages/color-picker){data-title="color-picker"}
 * [file-icons](https://atom.io/packages/file-icons){data-title="file-icons"}
-* [atom-beautify](https://atom.io/packages/atom-beautify "atom-beautify"){data-title="atom-beautify"}
+* [atom-beautify](https://atom.io/packages/atom-beautify){data-title="atom-beautify"}
 
 ### Themes
 
