@@ -7,7 +7,7 @@ const touchLinks = () => {
     links.forEach((link) => {
       link.addEventListener('touchstart', (e) => {
         e.target.focus()
-      });
+      }, {passive:true});
     });
   }
 };
