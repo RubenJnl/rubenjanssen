@@ -1,8 +1,10 @@
 .git
 DS_STORE
 .netlify/
+.jekyll-cache/
 .sass-cache
 _site
 package-lock.json
 SourceFiles
 Gemfile.lock
+Gemfile

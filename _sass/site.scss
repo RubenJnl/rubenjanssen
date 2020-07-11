@@ -22,6 +22,12 @@ html {
   color: var(--text);
   font-family: Helvetica, sans-serif;
   transition: background-color .5s ease;
+  font-size: 1.1em;
+  line-height: 1.5em;
+
+  @media screen and (min-width: 768px) {
+    font-size: 1em;
+  }
 
   &.swap {
     background-color: var(--swap-background);
