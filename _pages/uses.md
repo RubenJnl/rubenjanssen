@@ -14,7 +14,6 @@ I'll try to keep it up to date but I haven't added all items from my company mac
 
 ## 📝 Editor
 
-* [Atom](https://atom.io/){:data-title="Atom"}, still very fond of this little editor.
 * [Visual Studio Code](https://code.visualstudio.com/){:data-title="Visual Studio Code} Just to see what te fuzz is all about. Can't get used to the quirky navigation panel though.
 
 ### 🔌 Main plugins
@@ -56,17 +55,17 @@ I also use a custom zsh config, I'll dedicate a post to that later 🙃
 
 ## 💻⌨️🖱🖥📱 Machines
 
-Shall I go for the new 16" MacBook Pro? 🤔 With a descent keyboard after years of horrible keyboards.
-
 * MacBook Air 13" 2013
   * Magic Keyboard 1
+  * Magic Mouse (black)
   * Magic Mouse
-* MacBook Pro 15" 2015
+* MacBook Pro 16" 2020
   * Magic Keyboard 2
   * Magic Mouse
 * 27" Thunderbold Display
-* iPhone 11
+* iPhone 12
 * Apple Watch 4
+* iPad 8
 * iPhone 7 _(test phone)_
 * iPad (The New, gen 3) _(semi slow device, test tablet)_
 * Samsung J6 _(slow device, test phone)_
