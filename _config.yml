@@ -24,7 +24,7 @@ url: "https://rubenjanssen.me" # the base hostname & protocol for your site, e.g
 exclude: ["*.xml","*.log","Gemfile", "*.json", "images", "deploy" ,"node_modules", "README.md","vendor"]
 social:
   - name: Mastodon
-    url: https://uiuxdev.social/@rubenjanssen.nl
+    url: https://uiuxdev.social/@RubenJ
     rel: me
   - name: Twitter
     url: https://twitter.com/RubenJ
