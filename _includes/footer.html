@@ -11,7 +11,7 @@
       <div class="o-flex__item">
         <ul class="a-list--reset a-list--inline a-list--separator">
           {% for s in site.social %}
-            <li><a href="{{s.url}}" target="_blank" rel="noopener" data-title="{{s.name}}">{{s.name}}</a></li>
+            <li><a href="{{s.url}}" target="_blank" rel="{% if s.rel %}{{s.rel}}{% else %}noopener{% endif %}" data-title="{{s.name}}">{{s.name}}</a></li>
           {% endfor %}
         </ul>
       </div>

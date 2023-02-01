@@ -23,6 +23,9 @@ siteUrl: https://rubenjanssen.me
 url: "https://rubenjanssen.me" # the base hostname & protocol for your site, e.g. http://example.com
 exclude: ["*.xml","*.log","Gemfile", "*.json", "images", "deploy" ,"node_modules", "README.md","vendor"]
 social:
+  - name: Mastodon
+    url: https://uiuxdev.social/@rubenjanssen.nl
+    rel: me
   - name: Twitter
     url: https://twitter.com/RubenJ
   - name: Facebook
@@ -35,9 +38,10 @@ social:
     url: https://500px.com/RubenJanssen
 
 
+
 # Build settings
 markdown: kramdown
-plugins:
+# plugins:
   # - jekyll-feed
 
 collections:
