@@ -1,17 +1,21 @@
 {% if jekyll.environment != "dev" %}
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-1516236-1"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+<!-- Microsoft Clarity -->
+<script type="text/javascript">
+  (function (c, l, a, r, i, t, y) {
+    c[a] = c[a] || function () { (c[a].q = c[a].q || []).push(arguments) };
+    t = l.createElement(r); t.async = 1; t.src = "https://www.clarity.ms/tag/" + i;
+    y = l.getElementsByTagName(r)[0]; y.parentNode.insertBefore(t, y);
+  })(window, document, "clarity", "script", "ncuvhi726b");
+</script>
 
-    gtag('config', 'UA-1516236-1');
-  </script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-1516236-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
-  <!-- Sentry JS logging -->
-  <link rel="preload" href="https://browser.sentry-cdn.com/5.1.1/bundle.min.js" as="script" crossorigin="/">
+  gtag('config', 'UA-1516236-1');
+</script>
 
-  <script src="https://browser.sentry-cdn.com/5.1.1/bundle.min.js" crossorigin="anonymous"></script>
-  <script>Sentry.init({ dsn: 'https://10988e5ad4184c13949f9495c3aa882a@sentry.io/1448129' });</script>
 {% endif %}
