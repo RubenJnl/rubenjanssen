@@ -8,3 +8,5 @@ package-lock.json
 SourceFiles
 Gemfile.lock
 Gemfile
+node_modules
+dist/
